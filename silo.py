@@ -16,7 +16,7 @@ external_links = []
 
 link_list = soup.find_all("a")
 for link in link_list:
-    if re.match(r'^https://gardeem.com', link['href']):
+    if re.match(r'^', link['href']):
         # print(link)
         if link['href'] not in internal_links:
             internal_links.append(link['href'])
